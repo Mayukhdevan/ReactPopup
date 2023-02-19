@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+.main-bg-container {
+  min-height: 100hv;
+  display: flex;
+  flex-direction: column;
+}
+.responsive-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.route-img-sm {
+  width: 70%;
+}
+.route-img-lg {
+  display: none;
+}
+@media (min-width: 768px) {
+  .route-img-lg {
+    display: flex;
+    width: 60%;
+  }
+  .route-img-sm {
+    display: none;
+  }
+}
